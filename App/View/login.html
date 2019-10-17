@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Login | DigitalEasyr</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/footer.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/prettyPhoto.css" rel="stylesheet">
+    <link href="css/price-range.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <link rel="shortcut icon" href="images/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+</head>
+<!--/head-->
+
+<body>
+    <header id="header">
+        <!--header-->
+        <div class="header_top">
+            <!--header_top-->
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="contactinfo">
+                            <ul class="nav nav-pills">
+                                <li><a href="#"><i class="fa fa-phone"></i> +55 (12) 99147-5564</a></li>
+                                <li><a href="#"><i class="fa fa-envelope"></i> digitaleasybr@gmail.com</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="social-icons pull-right">
+                            <ul class="nav navbar-nav">
+                                <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                                <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                                <li><a href=""><i class="fa fa-google-plus"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--/header_top-->
+
+        <div class="header-middle">
+            <!--header-middle-->
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 clearfix">
+                        <div class="logo pull-left">
+                            <a href="index.html"><img src="images/home/logo.png" alt="" /></a>
+                        </div>
+                    </div>
+                    <div class="col-md-8 clearfix">
+                        <div class="shop-menu clearfix pull-right">
+                            <ul class="nav navbar-nav">
+                                <li><a href="cart.html"><i class="fa fa-shopping-cart"></i> Carrinho</a></li>
+                                <li><a href="login.html"><i class="fa fa-lock"></i> Login</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--/header-middle-->
+
+        <div class="header-bottom">
+            <!--header-bottom-->
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-9">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+                        <div class="mainmenu pull-left">
+                            <ul class="nav navbar-nav collapse navbar-collapse">
+                                <li><a href="index.html" class="active">Inicio</a></li>
+                                <li class="dropdown"><a href="#">Loja<i class="fa fa-angle-down"></i></a>
+                                    <ul role="menu" class="sub-menu">
+                                        <li><a href="shop.html">Produtos</a></li>
+                                        <li><a href="product-details.html">Produtos em Destaques</a></li>
+                                        <li><a href="cart.html">Carrinho</a></li>
+                                        <li><a href="login.html">Login</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown"><a href="blog.html">Sobre</a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="search_box pull-right">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--/header-bottom-->
+    </header>
+    <!--/header-->
+
+    <section id="form">
+        <!--form-->
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4 col-sm-offset-1">
+                    <div class="login-form">
+                        <!--login form-->
+                        <h2>Faça login na sua conta</h2>
+                        <form action="index.html">
+                            <input type="text" placeholder="Nome" required />
+                            <input type="email" placeholder="Email" required />
+                            <input type="password" placeholder="Senha" required />
+                            <span>
+                                <input type="checkbox" class="checkbox">
+                                Mantenha-me conectado
+                            </span>
+                            <button type="submit" class="btn btn-default">Login</button>
+                        </form>
+                    </div>
+                    <!--/login form-->
+                </div>
+                <div class="col-sm-1">
+                    <h2 class="or">OU</h2>
+                </div>
+                <div class="col-sm-4">
+                    <div class="signup-form">
+                        <!--sign up form-->
+                        <h2>Inscrição de novo usuário!</h2>
+                        <form action="cadastro_usuario.php" method="post">
+                            <input name="nome" type="text" placeholder="Nome" required />
+                            <input name="sobrenome" type="text" placeholder="Sobrenome" required />
+                            <input name="idade" type="text" placeholder="Idade" required />
+                            <input name="email" type="email" placeholder="Email" required />
+                            <input name="senha" type="password" placeholder="Senha" required />
+                            <a href="index.html">
+                            <input type="submit" class="btn btn-default" value="CADASTRAR" /> </a>
+                        </form>
+                    </div>
+                    <!--/sign up form-->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/form-->
+
+
+    <footer id="footer">
+        <!--Footer-->
+        <footer>
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-4 col-md-6">
+                        <h3>Site</h3>
+                        <ul class="list-unstyled three-column">
+                            <li>Local</li>
+                            <li>Serviço</li>
+                            <li>Sobre</li>
+                            <li>Contato</li>
+                            <li>Compania</li>
+                            <li>Suporte ao Cliente</li>
+                        </ul>
+                        <h3>Fale conosco</h3>
+                        <ul class="list-unstyled socila-list">
+                            <img src="https://img.icons8.com/color/48/000000/facebook.png">
+                            <img src="https://img.icons8.com/color/50/000000/instagram-new.png">
+                            <img src="https://img.icons8.com/color/48/000000/whatsapp.png">
+                            <img src="https://img.icons8.com/color/48/000000/gmail.png">
+                            <img src="https://img.icons8.com/color/48/000000/twitter.png">
+                            <img src="https://img.icons8.com/color/48/000000/linkedin.png"> </ul>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <h3>Patrocinios</h3>
+                        <div class="media">
+                            <a href="#" class="pull-left">
+                                <img src="http://placehold.it/64x64" alt="" class="media-object" />
+                            </a>
+                            <div class="media-body">
+                                <h4 class="media-heading">Programming</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+
+                        <div class="media">
+                            <a href="#" class="pull-left">
+                                <img src="http://placehold.it/64x64" alt="" class="media-object" />
+                            </a>
+                            <div class="media-body">
+                                <h4 class="media-heading">Coding</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+
+                        <div class="media">
+                            <a href="#" class="pull-left">
+                                <img src="http://placehold.it/64x64" alt="" class="media-object" />
+                            </a>
+                            <div class="media-body">
+                                <h4 class="media-heading">Web Sesign</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-4">
+                        <h3>Nosso trabalho</h3>
+                        <img class="img-thumbnail" src="images/home/Design%20sem%20nome%20(1).png" alt="" />
+                        <img class="img-thumbnail" src="images/home/Design%20sem%20nome%20(2).png" alt="" />
+                        <img class="img-thumbnail" src="images/home/Design%20sem%20nome%20(3).png" alt="" />
+                        <img class="img-thumbnail" src="images/home/Design%20sem%20nome.png" alt="" />
+                    </div>
+
+                </div>
+            </div>
+            <div class="copyright text-center">
+                Copyright &copy; 2019 <span>Digital-Easy</span>
+            </div>
+        </footer>
+
+    </footer>
+    <!--/Footer-->
+
+
+
+    <script src="js/jquery.js"></script>
+    <script src="js/price-range.js"></script>
+    <script src="js/jquery.scrollUp.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.prettyPhoto.js"></script>
+    <script src="js/main.js"></script>
+</body></html>
