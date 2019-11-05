@@ -1,31 +1,37 @@
 <?php
-session_start();
-define("DIR", dirname(__FILE__));
-define("DS", DIRECTORY_SEPARATOR);
+    require 'config.php';
+?>
 
-include_once DIR.DS.'App'.DS.'Loader.php';
+<a href="novo.php">Novo Produto</a>
 
-$loader = new App\Loader();
-$loader->register();
+<table border = "0" width="100%">
+    <tr>
+        <th>Modelo Produto</th>
+        <th>Preço</th>
+        <th>Categoria do Produto</th>
+        <th>Descrição do Produto</th>
+        <th>Marca do Produto</th>
 
-$pdo               = new \PDO("mysql:host=localhost;dbname=produtos", "root", "");
-$productRepository = new App\Model\Product\ProductRepositoryPDO($pdo);
+    </tr>
+<?php
+$sql = "SELECT * FROM produtos";
+$sql = $pdo->query($sql);
 
-
-$page   = isset($_GET['page']) ? $_GET['page'] : '';
-$action = isset($_GET['action']) ? $_GET['action'] : 'index';
-
-
-
-
-switch ($page) {
-    case 'cart':
-        $sessionCart = new App\Model\Shopping\CartSession();
-        $cart = new App\Controller\Cart($productRepository, $sessionCart);
-        call_user_func_array(array($cart, $action), array());
-    break;
-
-    default:
-        $home = new App\Controller\Home($productRepository);
-        call_user_func_array(array($home, $action), array());
+if($sql->rowCount() > 0)
+{
+    foreach($sql->fetchAll() as $dados)
+    {
+        echo '<tr>';
+        echo '<td align="center">'.$dados['modelo_produto'].'</td>';
+        echo '<td align="center">'.$dados['preco_produto'].'</td>';
+        echo '<td align="center">'.$dados['categoria_produto'].'</td>';
+        echo '<td align="center">'.$dados['descricao_produto'].'</td>';
+        echo '<td align="center">'.$dados['marca'].'</td>';
+        echo '<td align="center"><a href="editar.php?id='.$dados['id'].'">Editar</a> - <a href="excluir.php?id='.$dados['id'].'">Excluir</a></td>';
+        echo '</tr>';
+    }
 }
+?>
+</table>
+
+
