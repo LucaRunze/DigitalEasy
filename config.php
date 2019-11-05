@@ -9,8 +9,8 @@ $config = array();
 
 if(ENVIRONMENT == 'development')
 {
-    define("BASE_URL","http://localhost/loja_luca/");
-    $config['dbname'] = 'loja_luca';
+    define("BASE_URL","http://localhost/digital_easy/");
+    $config['dbname'] = 'digital_easy';
     $config['host'] = 'localhost';
     $config['dbuser'] = 'root';
     $config['dbpass'] = '';
