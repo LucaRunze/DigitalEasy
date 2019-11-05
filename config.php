@@ -1,15 +1,33 @@
 <?php
 
-    $dsn = "mysql:dbname=digital_easy;host=localhost";
-    $dbuser = "root";
-    $dbpass = "";
+require 'environment.php';
 
-    try
-    {
-        $pdo = new PDO($dsn, $dbuser, $dbpass);
-    }
-    catch(PDOException $e)
-    {
-        echo "Falhou a conexão! ".$e->getMessage();
-    }
+global $config;
+global $db;
+
+$config = array();
+
+if(ENVIRONMENT == 'development')
+{
+    define("BASE_URL","http://localhost/loja_luca/");
+    $config['dbname'] = 'loja_luca';
+    $config['host'] = 'localhost';
+    $config['dbuser'] = 'root';
+    $config['dbpass'] = '';
+}
+else
+{
+    define("BASE_URL","");
+    $config['dbname'] = '';
+    $config['host'] = '';
+    $config['dbuser'] = '';
+    $config['dbpass'] = '';
+}
+
+$config['default_lang'] = 'pt-br';
+
+$db = new PDO("mysql:dbname=".$config['dbname'].";host=".$config['host'],$config['dbuser'],$config['dbpass']);
+   
+$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
 ?>
