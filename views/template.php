@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="<?php echo BASE_URL; ?>assets/css/main.css" />
     <link rel="stylesheet" href="<?php echo BASE_URL; ?>assets/css/responsive.css" />
    
-    <link rel="shortcut icon" href="images/home/favicon.ico">
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
@@ -61,7 +61,7 @@
                 <div class="row">
                     <div class="col-md-4 clearfix">
                         <div class="logo pull-left">
-                            <a href="index.html"><img src="images/home/logo.png" alt="" /></a>
+                            <a href="index.php"><img src="images/home/logo.png" alt="" /></a>
                         </div>
 
                     </div>
@@ -102,6 +102,28 @@
                                 <li class="dropdown"><a href="blog.html">Sobre</a></li>
 
                             </ul>
+                            
+                            <ul class="dropdown-menu">
+
+                           <?php foreach($viewData['categories'] as $cat): ?>
+
+                        <li>
+                            <a href="<?php echo 
+                            BASE_URL.'categories/enter/'.$cat['id'];?>">
+                            <?php echo $cat['name'];?>
+                            </a>
+                        </li>
+                            <?php
+                                if(count($cat['subs']) > 0)
+                                {
+                                    $this->loadview('menu-subcategory', array(
+                                        'subs' => $cat['subs'],
+                                        'level' => 1
+                                    ));
+                                }
+                            ?>
+
+                            <?php endforeach;?>
                         </div>
                     </div>
                     <div class="col-sm-3">
