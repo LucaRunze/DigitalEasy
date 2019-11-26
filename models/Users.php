@@ -1,21 +1,27 @@
 <?php
-class Products extends model {
+class Users extends model {
     
-    public function Verification($name, $email){
+    public function Verification($email){
 
-        $sql = "SELECT * FROM users WHERE name = '$name' and email = '$email'";
+        $sql = "SELECT * FROM users WHERE  email = '$email'";
 		$sql = $this->db->prepare($sql);
-		$sql->bindValue(":id", $id);
 		$sql->execute();
         $a = true;
 
-		if($sql->rowCount() > 0) {
-            return !$a;
-        }else{
+		if($sql->rowCount() == 0) {
             return $a;
+        }else{
+            return !$a;
         }
     }
 
-    public function
+    public function cc($name, $email, $password){
+
+        $sql = "INSERT INTO users SET name = '$name', email = '$email', password = '$password'";
+        $sql = $this->db->prepare($sql);
+        $sql = $sql->execute();
+
+        return $sql;
+    }
 }
 ?>
