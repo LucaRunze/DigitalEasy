@@ -27,4 +27,5 @@ class controller {
 		extract($viewData);
 		include 'views/logincadastro/'.$viewName.'.php';
 	}
+
 }

@@ -23,5 +23,22 @@ class Users extends model {
 
         return $sql;
     }
+
+    public function VerifiL($email, $password){
+
+        $sql = "SELECT * FROM users WHERE  email = '$email'";
+		$sql = $this->db->prepare($sql);
+		$sql->execute();
+        $a = true;
+
+		if($sql->rowCount() > 0) {
+            $dados = $sql->fetch();
+
+            $_SESSION['id_user'] = $dados["id"];
+            return $a;
+        }else{
+            return !$a;
+        }
+    }
 }
 ?>

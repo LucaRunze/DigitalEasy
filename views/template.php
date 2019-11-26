@@ -30,7 +30,13 @@
 							<li><a href="<?php echo BASE_URL; ?>lang/set/pt-br">Português</a></li>
 						</ul>
 					</li>
+					<?php if(isset($_SESSION['id_user']) && !empty($_SESSION['id_user'])){?>
+					<li><a href="<?php echo BASE_URL; ?>login">Perfil</a></li>
+					<li><a href="<?php echo BASE_URL; ?>login">Sair</a></li>
+					<?php }else{ ?>
 					<li><a href="<?php echo BASE_URL; ?>login"><?php $this->lang->get('LOGIN'); ?></a></li>
+					<li><a href="<?php echo BASE_URL; ?>cadastro">Cadastro</a></li>
+					<?php } ?>
 				</ul>
 			</div>
 		</nav>

@@ -17,13 +17,8 @@
 
 			<form class="contact1-form validate-form" method="post">
 				<span class="contact1-form-title">
-					Cadastro Clientes
+					Login
 				</span>
-
-				<div class="wrap-input1 validate-input" data-validate = "Nome Cliente">
-					<input class="input1" type="text" name="name" placeholder="Nome">
-					<span class="shadow-input1"></span>
-				</div>
 
 				<div class="wrap-input1 validate-input" data-validate = "Email Cliente">
 					<input class="input1" type="email" name="email" placeholder="Email">
@@ -38,7 +33,7 @@
 				<div class="container-contact1-form-btn">
 					<button type="submit" class="contact1-form-btn">
 						<span>
-							Salvar Produto
+							Logar
 							<i class="fa fa-long-arrow-right" aria-hidden="true"></i>
 						</span>
 					</button>
