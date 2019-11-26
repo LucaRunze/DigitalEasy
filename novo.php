@@ -1,47 +1,17 @@
-<?php
-
-require 'config.php';
-
-if(isset($_POST['modelo_produto']) && empty($_POST['modelo_produto'])== false)
-{
-    $modelo = addslashes($_POST['modelo_produto']);
-    $preco = addslashes($_POST['preco_produto']);
-    $categoria = addslashes($_POST['categoria_produto']);
-    $descri = addslashes($_POST['descricao_produto']);
-    $marca = addslashes($_POST['marca']);
-
-
-    
-    $sql = "INSERT INTO produtos SET modelo_produto = '$modelo', preco_produto = '$preco', categoria_produto = '$categoria', descricao_produto = '$descri', marca = '$marca'";
-    $pdo->query($sql);
-    
-    header("Location: index.php");
-    
-}
-
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Contact V1</title>
+	<title>Adicionar Produto | Digital-Easy</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-<!--===============================================================================================-->
-	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
-<!--===============================================================================================-->
+	<link rel="icon" type="image/png" href="images/home/favicon.ico"/>
 	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
-<!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
-<!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
-<!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
-<!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
-<!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="css/util.css">
 	<link rel="stylesheet" type="text/css" href="css/main1.css">
-<!--===============================================================================================-->
 </head>
 <body>
 
@@ -51,7 +21,7 @@ if(isset($_POST['modelo_produto']) && empty($_POST['modelo_produto'])== false)
 				<img src="images/logo.png" alt="IMG">
 			</div>
 
-			<form class="contact1-form validate-form">
+			<form class="contact1-form validate-form" action='novo2.php'>
 				<span class="contact1-form-title">
 					Cadrastro de Produto
 				</span>
@@ -81,7 +51,7 @@ if(isset($_POST['modelo_produto']) && empty($_POST['modelo_produto'])== false)
 				</div>
 
 				<div class="container-contact1-form-btn">
-					<button class="contact1-form-btn">
+					<button type="submit" class="contact1-form-btn">
 						<span>
 							Salvar Produto
 							<i class="fa fa-long-arrow-right" aria-hidden="true"></i>
@@ -95,14 +65,10 @@ if(isset($_POST['modelo_produto']) && empty($_POST['modelo_produto'])== false)
 
 
 
-<!--===============================================================================================-->
 	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
-<!--===============================================================================================-->
 	<script src="vendor/bootstrap/js/popper.js"></script>
 	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-<!--===============================================================================================-->
 	<script src="vendor/select2/select2.min.js"></script>
-<!--===============================================================================================-->
 	<script src="vendor/tilt/tilt.jquery.min.js"></script>
 	<script >
 		$('.js-tilt').tilt({
@@ -119,8 +85,6 @@ if(isset($_POST['modelo_produto']) && empty($_POST['modelo_produto'])== false)
 
   gtag('config', 'UA-23581568-13');
 </script>
-
-<!--===============================================================================================-->
 	<script src="js/main.js"></script>
 
 </body>
