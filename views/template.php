@@ -32,7 +32,7 @@
 					</li>
 					<?php if(isset($_SESSION['id_user']) && !empty($_SESSION['id_user'])){?>
 					<li><a href="<?php echo BASE_URL; ?>login">Perfil</a></li>
-					<li><a href="<?php echo BASE_URL; ?>login">Sair</a></li>
+					<li><a href="<?php echo BASE_URL; ?>logoff">Sair</a></li>
 					<?php }else{ ?>
 					<li><a href="<?php echo BASE_URL; ?>login"><?php $this->lang->get('LOGIN'); ?></a></li>
 					<li><a href="<?php echo BASE_URL; ?>cadastro">Cadastro</a></li>
