@@ -1,5 +1,15 @@
 <?php
 class Users extends model {
+
+    public function isLogged(){
+        
+        if(isset($_SESSION['id_user']) && empty($_SESSION['id_user']) == false){
+            return true;
+        }else{
+            return false;
+        }
+
+    }
     
     public function Verification($email){
 
@@ -40,5 +50,22 @@ class Users extends model {
             return !$a;
         }
     }
+
+    public function infoPerfil($id_user){
+        $sql = "SELECT * From user_info Where id_users = '$id_user'";
+        $sql = $this->db->prepare($sql);
+        $sql->execute();
+
+        return $sql;
+    }
+
+    public function atualizaInfoPerfil($id_user, $name, $cidade, $endereco, $n_casa, $cep, $cpf, $telefone){
+        $sql = "UPDATE user_info SET name = '$name', cidade = '$cidade', endereco = '$endereco', n_casa = '$n_casa', cep = '$cep', cpf = '$cpf', telefone = '$telefone' where id_users = '$id_user' ";
+        $sql = $this->db->prepare($sql);
+        $sql->execute();
+        
+        return $sql;
+    }
+
 }
 ?>
