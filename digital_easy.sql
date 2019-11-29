@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 26-Nov-2019 às 21:49
+-- Generation Time: 29-Nov-2019 às 21:33
 -- Versão do servidor: 10.1.37-MariaDB
 -- versão do PHP: 7.3.1
 
@@ -176,6 +176,13 @@ CREATE TABLE `products_options` (
   `p_value` varchar(100) NOT NULL DEFAULT ''
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+--
+-- Extraindo dados da tabela `products_options`
+--
+
+INSERT INTO `products_options` (`id`, `id_product`, `id_option`, `p_value`) VALUES
+(1, 1, 1, 'Preto');
+
 -- --------------------------------------------------------
 
 --
@@ -282,29 +289,28 @@ CREATE TABLE `users` (
 
 INSERT INTO `users` (`id`, `name`, `email`, `password`) VALUES
 (1, 'Luca Barros', 'ifspcaraguatatuba1850997@gmail.com', '827ccb0eea8a706c4c34a16891f84e7b'),
-(2, 'JÃ£o', 'mjboss2001@gmail.com', 'afbeca2ba9599023187849f1a9d727c7');
+(2, 'JÃ£o', 'mjboss2001@gmail.com', 'afbeca2ba9599023187849f1a9d727c7'),
+(5, 'Lucas Cruz', 'lucalindo@gmail.com', 'afbeca2ba9599023187849f1a9d727c7');
 
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `usuarios`
+-- Estrutura da tabela `user_info`
 --
 
-CREATE TABLE `usuarios` (
-  `id` int(11) NOT NULL,
-  `Nome` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
-  `Sobrenome` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
-  `Email` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
-  `Senha` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
-  `Senha_C` varchar(50) COLLATE utf8_unicode_ci NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
-
---
--- Extraindo dados da tabela `usuarios`
---
-
-INSERT INTO `usuarios` (`id`, `Nome`, `Sobrenome`, `Email`, `Senha`, `Senha_C`) VALUES
-(42, 'Luca', 'Barros', ' mailiveskate@gmail.com', 'zecabialuc4', 'zecabialuc4');
+CREATE TABLE `user_info` (
+  `id` int(10) NOT NULL,
+  `id_users` int(10) NOT NULL,
+  `name` varchar(50) NOT NULL,
+  `email` varchar(50) NOT NULL,
+  `cidade` varchar(50) NOT NULL,
+  `estado` varchar(50) NOT NULL,
+  `endereco` varchar(50) NOT NULL,
+  `n_casa` int(4) NOT NULL,
+  `cep` int(8) NOT NULL,
+  `cpf` int(11) NOT NULL,
+  `telefone` int(15) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Indexes for dumped tables
@@ -395,9 +401,9 @@ ALTER TABLE `users`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `usuarios`
+-- Indexes for table `user_info`
 --
-ALTER TABLE `usuarios`
+ALTER TABLE `user_info`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -450,7 +456,7 @@ ALTER TABLE `products_images`
 -- AUTO_INCREMENT for table `products_options`
 --
 ALTER TABLE `products_options`
-  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `produtos`
@@ -486,13 +492,13 @@ ALTER TABLE `rates`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
--- AUTO_INCREMENT for table `usuarios`
+-- AUTO_INCREMENT for table `user_info`
 --
-ALTER TABLE `usuarios`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=43;
+ALTER TABLE `user_info`
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
