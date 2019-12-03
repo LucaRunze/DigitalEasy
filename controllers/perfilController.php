@@ -21,7 +21,7 @@ class perfilController extends controller {
             $telefone = addslashes($_POST['telefone']);
             $id_user = $_SESSION['id_user'];
 
-            $user->autalizaInfoPerfil($id_user, $name, $cidade, $endereco, $n_casa, $cep, $cpf, $telefone);
+            $user->atualizaInfoPerfil($id_user, $name, $cidade, $endereco, $n_casa, $cep, $cpf, $telefone);
         }
 
         if($user->isLogged() == true){

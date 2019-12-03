@@ -18,7 +18,13 @@ class cadastroController extends controller {
 
             $ver = $user->Verification($email);
             if($ver == true){
-               $user->cc($name, $email, $password);
+               $u=$user->cc($name, $email, $password);
+
+                $getid = $user->allbank($email);
+                $getid = $getid->fetch();    
+                $id = $getid["id"];
+
+                $user->cc2($id, $name, $email);
 
             }else{
                 header("Location: ". BASE_URL."cadastro");
