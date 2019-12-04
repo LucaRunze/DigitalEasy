@@ -22,6 +22,8 @@ class perfilController extends controller {
             $id_user = $_SESSION['id_user'];
 
             $user->atualizaInfoPerfil($id_user, $name, $cidade, $endereco, $n_casa, $cep, $cpf, $telefone);
+            header("location: ".BASE_URL);
+
         }
 
         if($user->isLogged() == true){
