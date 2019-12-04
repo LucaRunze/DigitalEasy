@@ -25,9 +25,9 @@ class cadastroController extends controller {
                 $id = $getid["id"];
 
                 $user->cc2($id, $name, $email);
-
-            }else{
                 header("Location: ". BASE_URL."login");
+            }else{
+                header("Location: ". BASE_URL."cadastro");
             }
         }
 
