@@ -4,6 +4,151 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+#slider {
+    padding-bottom: 45px;
+    margin-top: 40px;
+}
+
+.carousel-indicators li {
+    background: #C4C4BE;
+}
+
+.carousel-indicators li.active {
+    background: #005eff;
+}
+.item {
+    padding-left: 100px;
+}
+
+.pricing {
+    position: absolute;
+    right: 40%;
+    top: 52%;
+}
+
+.girl {
+    margin-left: 0;
+}
+
+.item h1 {
+    color: #B4B1AB;
+    font-family: abel;
+    font-size: 48px;
+    margin-top: 115px;
+}
+
+.item h1 span {
+    color: #005eff;
+}
+
+.item h2 {
+    color: #363432;
+    font-family: 'Roboto', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 22px;
+    margin-top: 10px;
+}
+
+.item p {
+    color: #363432;
+    font-size: 16px;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+}
+.get {
+    background: #005eff;
+    border: 0 none;
+    border-radius: 0;
+    color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    margin-top: 23px;
+}
+.item button:hover {
+    background: #005eff;
+}
+
+.control-carousel {
+    position: absolute;
+    top: 50%;
+    font-size: 60px;
+    color: #C2C2C1;
+}
+
+.control-carousel:hover {
+    color: #005eff;
+}
+.right {
+    right: 0;
+}
+
+.category-products {
+    border: 1px solid #F7F7F0;
+    margin-bottom: 35px;
+    padding-bottom: 20px;
+    padding-top: 15px;
+}
+
+.left-sidebar h2,
+.brands_products h2 {
+    color: #005eff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0 auto 30px;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 3;
+}
+
+.left-sidebar h2:after,
+h2.title:after {
+    content: " ";
+    position: absolute;
+    border: 1px solid #f5f5f5;
+    bottom: 8px;
+    left: 0;
+    width: 100%;
+    height: 0;
+    z-index: -2;
+}
+
+.left-sidebar h2:before {
+    content: " ";
+    position: absolute;
+    background: #fff;
+    bottom: -6px;
+    width: 130px;
+    height: 30px;
+    z-index: -1;
+    left: 50%;
+    margin-left: -65px;
+}
+
+h2.title:before {
+    content: " ";
+    position: absolute;
+    background: #fff;
+    bottom: -6px;
+    width: 220px;
+    height: 30px;
+    z-index: -1;
+    left: 50%;
+    margin-left: -110px;
+}
+
+.category-products .panel {
+    background-color: #FFFFFF;
+    border: 0px;
+    border-radius: 0px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    margin-bottom: 0px;
+}
+
 html {
     font-family: sans-serif;
     -webkit-text-size-adjust: 100%;
@@ -1321,39 +1466,39 @@ th {
 }
 
 .glyphicon-object-align-bottom:before {
-    content: "\e245"
+    content: "\e245";
 }
 
 .glyphicon-object-align-horizontal:before {
-    content: "\e246"
+    content: "\e246";
 }
 
 .glyphicon-object-align-left:before {
-    content: "\e247"
+    content: "\e247";
 }
 
 .glyphicon-object-align-vertical:before {
-    content: "\e248"
+    content: "\e248";
 }
 
 .glyphicon-object-align-right:before {
-    content: "\e249"
+    content: "\e249";
 }
 
 .glyphicon-triangle-right:before {
-    content: "\e250"
+    content: "\e250";
 }
 
 .glyphicon-triangle-left:before {
-    content: "\e251"
+    content: "\e251";
 }
 
 .glyphicon-triangle-bottom:before {
-    content: "\e252"
+    content: "\e252";
 }
 
 .glyphicon-triangle-top:before {
-    content: "\e253"
+    content: "\e253";
 }
 
 .glyphicon-console:before {
@@ -1361,45 +1506,45 @@ th {
 }
 
 .glyphicon-superscript:before {
-    content: "\e255"
+    content: "\e255";
 }
 
 .glyphicon-subscript:before {
-    content: "\e256"
+    content: "\e256";
 }
 
 .glyphicon-menu-left:before {
-    content: "\e257"
+    content: "\e257";
 }
 
 .glyphicon-menu-right:before {
-    content: "\e258"
+    content: "\e258";
 }
 
 .glyphicon-menu-down:before {
-    content: "\e259"
+    content: "\e259";
 }
 
 .glyphicon-menu-up:before {
-    content: "\e260"
+    content: "\e260";
 }
 
 * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
-    box-sizing: border-box
+    box-sizing: border-box;
 }
 
 :after,
 :before {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
-    box-sizing: border-box
+    box-sizing: border-box;
 }
 
 html {
     font-size: 10px;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 body {
@@ -1407,7 +1552,7 @@ body {
     font-size: 14px;
     line-height: 1.42857143;
     color: #333;
-    background-color: #fff
+    background-color: #fff;
 }
 
 button,
@@ -1416,31 +1561,31 @@ select,
 textarea {
     font-family: inherit;
     font-size: inherit;
-    line-height: inherit
+    line-height: inherit;
 }
 
 a {
     color: #337ab7;
-    text-decoration: none
+    text-decoration: none;
 }
 
 a:focus,
 a:hover {
     color: #23527c;
-    text-decoration: underline
+    text-decoration: underline;
 }
 
 a:focus {
     outline: 5px auto -webkit-focus-ring-color;
-    outline-offset: -2px
+    outline-offset: -2px;
 }
 
 figure {
-    margin: 0
+    margin: 0;
 }
 
 img {
-    vertical-align: middle
+    vertical-align: middle;
 }
 
 .carousel-inner > .item > a > img,
@@ -1450,7 +1595,7 @@ img {
 .thumbnail > img {
     display: block;
     max-width: 100%;
-    height: auto
+    height: auto;
 }
 
 .img-rounded {
@@ -7877,7 +8022,7 @@ button.close {
     text-indent: -999px;
     cursor: pointer;
     background-color: #000\9;
-    background-color: rgba(0, 0, 0, 0);
+    background-color: #000;
     border: 1px solid #fff;
     border-radius: 10px
 }
