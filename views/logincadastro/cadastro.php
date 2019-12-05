@@ -12,10 +12,10 @@
 		<link rel="stylesheet" href="<?php echo BASE_URL; ?>assets/css/style.css" type="text/css" />
        
 	</head>
-	<body>
-		<div class="container">
+	<body class="cadastroB">
+		<div class="containerCa">
 
-			<form class="contact1-form validate-form" method="post">
+			<form id="contact" class="contact1-form validate-form" method="post">
 				<span class="contact1-form-title">
 					Cadastro Clientes
 				</span>

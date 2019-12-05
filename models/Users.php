@@ -102,5 +102,18 @@ class Users extends model {
         return $sql;
     }
 
+    public function Recu($email){
+        $password = date("d/m/Y").time();
+        $sql = "UPDATE users set password = :password WHERE email = :email";
+        $sql = $this->db->prepare($sql);
+        $sql->bindValue(":email", $email);
+        $sql->bindValue(":password", $password);
+		if($sql->execute()){
+            $_SESSION['recu'] = $password;
+        }else{
+            $_SESSION['recu'] = 'ERRO';
+        }
+        
+     }
 }
 ?>

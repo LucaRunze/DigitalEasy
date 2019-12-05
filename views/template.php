@@ -290,7 +290,7 @@
                 </div>
             </div>
             <div class="copyright text-center">
-                Copyright &copy; 2019 <span>Digital-Easy</span>
+                Copyright &copy; 2019  <span href=>Digital-Easy</span>
             </div>
         </footer>
     </footer>
