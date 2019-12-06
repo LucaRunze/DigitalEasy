@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 29-Nov-2019 às 21:33
+-- Generation Time: 06-Dez-2019 às 20:21
 -- Versão do servidor: 10.1.37-MariaDB
 -- versão do PHP: 7.3.1
 
@@ -38,9 +38,15 @@ CREATE TABLE `brands` (
 --
 
 INSERT INTO `brands` (`id`, `name`) VALUES
-(1, 'BMW'),
-(2, 'BMW'),
-(3, 'BMW');
+(1, 'G-FIRE'),
+(2, 'MOTOROLA'),
+(3, 'HUAWEI'),
+(4, 'WARRIOR'),
+(5, 'DELL'),
+(6, 'FORKTRECK'),
+(7, 'CADEIRA'),
+(8, 'PHILIPS'),
+(12, 'ACER');
 
 -- --------------------------------------------------------
 
@@ -128,14 +134,19 @@ CREATE TABLE `products` (
 --
 
 INSERT INTO `products` (`id`, `id_category`, `id_brand`, `name`, `description`, `stock`, `price`, `price_from`, `rating`, `featured`, `sale`, `bestseller`, `new_product`, `options`) VALUES
-(1, 6, 1, 'BMW X1', 'Alguma descrição do produto.', 10, 140000, 220000, 0, 0, 1, 1, 0, NULL),
-(2, 6, 2, 'BMW X5', 'Alguma outra descrição', 10, 450000, 550000, 0, 0, 0, 0, 0, NULL),
-(3, 6, 2, 'BMW M3', 'Alguma outra descrição', 10, 370000, 400000, 0, 0, 0, 0, 1, NULL),
-(4, 6, 3, 'BMW i8', 'Alguma outra descrição', 10, 650000, 800000, 0, 0, 0, 0, 0, NULL),
-(5, 6, 1, 'BMW F800', 'Alguma outra descrição', 10, 38000, 45000, 0, 0, 0, 0, 1, NULL),
-(6, 6, 3, 'BMW r1200', 'Alguma outra descrição', 10, 80000, 96000, 0, 0, 0, 0, 0, NULL),
-(7, 6, 3, 'BMW s1000rr', 'Alguma outra descrição', 10, 60000, 75000, 0, 0, 0, 0, 0, NULL),
-(8, 6, 1, 'BMW s1000r', 'Alguma outra descrição', 10, 40000, 65000, 0, 0, 0, 0, 0, NULL);
+(1, 6, 1, 'Computador 1', 'Computador G-FIRE\r\nModelo HTG-244', 10, 1499, 1799, 0, 0, 1, 1, 0, NULL),
+(2, 6, 1, 'Computador 2', 'Computador G-FIRE Modelo HTAVA-R83', 10, 1835, 2000, 0, 0, 0, 0, 0, NULL),
+(3, 6, 1, 'Computador 3', 'Computador G-FIRE Modelo AMD A6 7400K', 10, 1299, 1499, 0, 0, 0, 0, 1, NULL),
+(4, 6, 2, 'Celular 1', 'Celular Moto One Vision', 10, 1917, 2100, 0, 0, 0, 0, 0, NULL),
+(5, 6, 2, 'Celular 2', 'Celular Moto G7 play', 10, 1059, 1299, 0, 0, 0, 0, 1, NULL),
+(6, 6, 3, 'Celular 3', 'Celular Huawei P30 lite', 10, 1337, 1499, 0, 0, 0, 0, 0, NULL),
+(7, 6, 3, 'Mouse 1', 'Mouse Warrior Modelo MO206', 10, 197, 210, 0, 0, 0, 0, 0, NULL),
+(8, 6, 5, 'Mouse 2', 'Mouse Dell Modelo Elite', 10, 450, 599, 0, 0, 0, 0, 0, NULL),
+(9, 6, 6, 'Mouse 3', 'Mouse Forktreck', 10, 53, 99, 0, 0, 0, 0, 0, NULL),
+(10, 7, 7, 'Cadeira 1', 'Cadeira Gamer', 10, 499, 699, 0, 0, 0, 0, 0, NULL),
+(11, 8, 8, 'HeadFone 1', 'Headfone Philips', 10, 299, 350, 0, 0, 0, 0, 0, NULL),
+(12, 12, 12, 'Notebook 1', 'Notebook Acer Modelo A315-51-347W', 10, 1899, 2199, 0, 0, 0, 0, 0, NULL),
+(13, 12, 12, 'Notebook 2', 'Notebook Lenovo Modelo Ideapad 330', 10, 2999, 3299, 0, 0, 0, 0, 0, NULL);
 
 -- --------------------------------------------------------
 
@@ -160,8 +171,13 @@ INSERT INTO `products_images` (`id`, `id_product`, `url`) VALUES
 (4, 4, '4.jpg'),
 (5, 5, '5.jpg'),
 (6, 6, '6.jpg'),
-(7, 7, '7.jpg'),
-(8, 8, '8.jpg');
+(7, 7, '7.png'),
+(8, 8, '8.png'),
+(9, 9, '9.png'),
+(10, 10, '10.jpg'),
+(11, 11, '11.jpg'),
+(12, 12, '12.jpg'),
+(13, 13, '13.jpg');
 
 -- --------------------------------------------------------
 
@@ -290,7 +306,14 @@ CREATE TABLE `users` (
 INSERT INTO `users` (`id`, `name`, `email`, `password`) VALUES
 (1, 'Luca Barros', 'ifspcaraguatatuba1850997@gmail.com', '827ccb0eea8a706c4c34a16891f84e7b'),
 (2, 'JÃ£o', 'mjboss2001@gmail.com', 'afbeca2ba9599023187849f1a9d727c7'),
-(5, 'Lucas Cruz', 'lucalindo@gmail.com', 'afbeca2ba9599023187849f1a9d727c7');
+(5, 'Lucas Cruz', 'lucalindo@gmail.com', 'afbeca2ba9599023187849f1a9d727c7'),
+(6, 'Lucas Santos Ferreira', 'lucassantos8274@gmail.com', 'e10adc3949ba59abbe56e057f20f883e'),
+(7, 'lucaaa', 'adad@faef', '2e8ea9453a76442b36bef097a5136ad5'),
+(8, 'ze cueca', 'lucas@gmail.com', 'e10adc3949ba59abbe56e057f20f883e'),
+(9, 'joca', 'joca@gmail', '202cb962ac59075b964b07152d234b70'),
+(10, 'lubilau', 'lubilau@gmail', '0228af72b097d93b646874e5dd81f863'),
+(11, 'joao', 'joao@gmail.com', '202cb962ac59075b964b07152d234b70'),
+(12, 'Fulano', 'fulano@gmail.com', '3342949e2e99fc2f304de6fdd626a188');
 
 -- --------------------------------------------------------
 
@@ -311,6 +334,19 @@ CREATE TABLE `user_info` (
   `cpf` int(11) NOT NULL,
   `telefone` int(15) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Extraindo dados da tabela `user_info`
+--
+
+INSERT INTO `user_info` (`id`, `id_users`, `name`, `email`, `cidade`, `estado`, `endereco`, `n_casa`, `cep`, `cpf`, `telefone`) VALUES
+(1, 6, 'Lucas Santos Ferreira', 'lucassantos8274@gmail.com', 'caragua', '', 'rua tal tal tal', 1885, 11668050, 7777779, 2147483647),
+(2, 7, 'lucaaa', 'adad@faef', '', '', '', 0, 0, 0, 0),
+(3, 8, 'ze cueca', 'lucas@gmail.com', '', '', '', 0, 0, 0, 0),
+(4, 9, 'joca', 'joca@gmail', '', '', '', 0, 0, 0, 0),
+(5, 10, 'lubilau', 'lubilau@gmail', '', '', '', 0, 0, 0, 0),
+(6, 11, 'Lucas Santos Ferreira', 'joao@gmail.com', 'caragua', '', 'rua tal tal tal, 1885', 1885, 11668050, 0, 2147483647),
+(7, 12, 'Fulano', 'fulano@gmail.com', '7777777', '', '77777777', 7, 77787777, 777777777, 7777777);
 
 --
 -- Indexes for dumped tables
@@ -414,7 +450,7 @@ ALTER TABLE `user_info`
 -- AUTO_INCREMENT for table `brands`
 --
 ALTER TABLE `brands`
-  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT for table `categories`
@@ -444,13 +480,13 @@ ALTER TABLE `pages`
 -- AUTO_INCREMENT for table `products`
 --
 ALTER TABLE `products`
-  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- AUTO_INCREMENT for table `products_images`
 --
 ALTER TABLE `products_images`
-  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- AUTO_INCREMENT for table `products_options`
@@ -492,13 +528,13 @@ ALTER TABLE `rates`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT for table `user_info`
 --
 ALTER TABLE `user_info`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
