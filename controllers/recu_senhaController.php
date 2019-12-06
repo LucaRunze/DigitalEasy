@@ -14,12 +14,12 @@ class recu_senhaController extends controller {
         if(isset($_POST["email"]) && !empty($_POST["email"])){
             $email = addslashes($_POST['email']);
             $password = md5(addslashes($_POST["password"]));
-            $user->recu($email);
+            
+            $_SESSION['recu'] = $user->Recu($email, $password);
             header("Location: ". BASE_URL);
         }
 
         $this->LoadView("recu_senha", $dados);
-        echo $_SESSION['recu'];
     }
 
 }
