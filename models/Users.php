@@ -114,5 +114,14 @@ class Users extends model {
         }
         
      }
+
+     public function verifyAdmin($email, $password){
+         $a = true;
+        if($email == "admindigital@gmail.com" && $password == "33d7afc0f793dc46311840d065ba439e"){
+            return $a;
+        }else{
+            return !$a;
+        }
+     }
 }
 ?>

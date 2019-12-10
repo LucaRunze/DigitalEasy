@@ -21,6 +21,8 @@
 		<td><?php echo $item['qt']; ?></td>
 		<td>R$ <?php echo number_format($item['price'], 2, ',', '.'); ?></td>
 		<td><a href="<?php echo BASE_URL; ?>cart/del/<?php echo $item['id']; ?>"><img src="<?php echo BASE_URL; ?>assets/images/delete.png" width="15" /></a></td>
+		<td><a href="<?php echo BASE_URL; ?>cart/del/<?php echo $item['id']; ?>"><button  id = "comprar" class="contact1-form-btn" onclick="finalizar()">Finalizar Compra</button></td>
+		<td><a href="<?php echo BASE_URL; ?>"><button  id = "voltar" class="contact1-form-btn">Compre mais</button></td>
 	</tr>
 	<?php endforeach; ?>
 	<tr>

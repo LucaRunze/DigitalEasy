@@ -40,13 +40,16 @@
                     <li><a href="<?php echo BASE_URL; ?>perfil">Perfil</a></li>
                     <li><a href="<?php echo BASE_URL; ?>logoff">Sair</a></li>
                 <?php
+                }else if(isset($_SESSION['id_admin']) && !empty($_SESSION['id_admin'])){
+                ?>
+                    <li><a href="<?php echo BASE_URL; ?>admin">Admin</a></li>
+                    <li><a href="<?php echo BASE_URL; ?>logoff">Sair</a></li>
+                <?php
                 }else{
                 ?>
                     <li><a href="<?php echo BASE_URL; ?>login"><?php $this->lang->get('LOGIN'); ?></a></li>
                     <li><a href="<?php echo BASE_URL; ?>cadastro">Cadastro</a></li>
-                <?php
-                }
-                ?>
+                <?php } ?>
             </ul>
         </div>
     </nav>
@@ -306,6 +309,7 @@
     <script type="text/javascript" src="<?php echo BASE_URL; ?>assets/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="<?php echo BASE_URL; ?>assets/js/script.js"></script>
     <script type="text/javascript" src="<?php echo BASE_URL; ?>assets/js/gam.js"></script>
+    <script type="text/javascript" src="<?php echo BASE_URL; ?>assets/js/compra.js"></script>
 </body>
 
 </html>

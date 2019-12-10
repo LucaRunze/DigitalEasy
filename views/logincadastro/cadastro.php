@@ -14,7 +14,7 @@
 	</head>
 	<body class="cadastroB">
 		<div class="containerCa">
-
+		<a href="<?php echo BASE_URL; ?>"><button class="btn" style="POSITION: RELATIVE; top: 130px;">Inicio</button></a>
 			<form id="contact" class="contact1-form validate-form" method="post">
 				<span class="contact1-form-title">
 					Cadastro Clientes
@@ -44,6 +44,7 @@
 					</button>
 				</div>
 			</form>
+			
 		</div>
     <script type="text/javascript" src="<?php echo BASE_URL; ?>assets/js/jquery.min.js"></script>
 		<script type="text/javascript" src="<?php echo BASE_URL; ?>assets/js/jquery-ui.min.js"></script>

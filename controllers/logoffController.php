@@ -8,7 +8,14 @@ class logoffController extends controller {
     }
 
     public function index() {
-        unset($_SESSION['id_user']);
+
+        if(isset($_SESSION['id_user'])){
+            unset($_SESSION['id_user']);
+        }
+
+        if(isset($_SESSION['id_admin'])){
+            unset($_SESSION['id_admin']);
+        }
 
         header("location: ".BASE_URL);
     }

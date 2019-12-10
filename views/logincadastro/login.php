@@ -14,7 +14,7 @@
 	</head>
 	<body>
 		<div class="containerCa">
-
+		<a href="<?php echo BASE_URL; ?>"><button class="btn" style="POSITION: RELATIVE; top: 130px;">Inicio</button></a>
 			<form id="contact" class="contact1-form validate-form" method="post">
 				<span class="contact1-form-title">
 					Login
