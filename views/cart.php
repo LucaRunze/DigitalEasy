@@ -29,8 +29,3 @@
 	</tr>
 </table>
 <hr>
-Digite o seu cep:<br>
-<form method="post">
-    <input type="number" name="cep">
-    <input type="submit" name="calcular"><br>
-</form>

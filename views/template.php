@@ -3,8 +3,10 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>Loja 2.0</title>
+    <title>Digital Easy</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" content="width-device-width, initial-scale=1"/>
+
     <link href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="<?php echo BASE_URL; ?>assets/css/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="<?php echo BASE_URL; ?>assets/css/jquery-ui.min.css" type="text/css" />
@@ -55,8 +57,8 @@
                     <a href="<?php echo BASE_URL; ?>"><img src="<?php echo BASE_URL; ?>assets/images/logo.png" /></a>
                 </div>
                 <div class="col-sm-7">
-                    <div class="head_help">(11) 9999-9999</div>
-                    <div class="head_email">contato@<span>loja2.com.br</span></div>
+                    <div class="head_help">(12) 12981483252</div>
+                    <div class="head_email">digitaleasy@<span>gmail.com</span></div>
 
                     <div class="search_area">
                         <form action="<?php echo BASE_URL; ?>busca" method="GET">
@@ -132,7 +134,6 @@
                                 <div class="col-sm-6">
                                     <h1><span>Digital</span>Easy</h1>
                                     <h2>Celulares</h2>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
                                     <button type="button" class="btn btn-default get">Veja Já</button>
                                 </div>
                                 <div class="col-sm-6">
@@ -145,7 +146,6 @@
                                 <div class="col-sm-6">
                                     <h1><span>Digital</span>Easy</h1>
                                     <h2>Cadeiras Gamers</h2>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
                                     <button type="button" class="btn btn-default get">Veja Já</button>
                                 </div>
                                 <div class="col-sm-6">
@@ -305,6 +305,7 @@
     <script type="text/javascript" src="<?php echo BASE_URL; ?>assets/js/jquery-ui.min.js"></script>
     <script type="text/javascript" src="<?php echo BASE_URL; ?>assets/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="<?php echo BASE_URL; ?>assets/js/script.js"></script>
+    <script type="text/javascript" src="<?php echo BASE_URL; ?>assets/js/gam.js"></script>
 </body>
 
 </html>
