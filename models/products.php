@@ -377,15 +377,6 @@ class Products extends model {
 				}
 			}
 
-			// Etapa 3 - Juntar tudo em um único array.
-			foreach($options as $ok => $op) {
-				if(isset($options_values[$op['id']])) {
-					$options[$ok]['value'] = $options_values[$op['id']];
-				} else {
-					$options[$ok]['value'] = '';
-				}
-			}
-
 		}
 
 
