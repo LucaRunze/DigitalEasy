@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 06-Dez-2019 às 20:21
+-- Generation Time: 10-Dez-2019 às 22:57
 -- Versão do servidor: 10.1.37-MariaDB
 -- versão do PHP: 7.3.1
 
@@ -304,7 +304,6 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `password`) VALUES
-(1, 'Luca Barros', 'ifspcaraguatatuba1850997@gmail.com', '827ccb0eea8a706c4c34a16891f84e7b'),
 (2, 'JÃ£o', 'mjboss2001@gmail.com', 'afbeca2ba9599023187849f1a9d727c7'),
 (5, 'Lucas Cruz', 'lucalindo@gmail.com', 'afbeca2ba9599023187849f1a9d727c7'),
 (6, 'Lucas Santos Ferreira', 'lucassantos8274@gmail.com', 'e10adc3949ba59abbe56e057f20f883e'),
@@ -313,7 +312,10 @@ INSERT INTO `users` (`id`, `name`, `email`, `password`) VALUES
 (9, 'joca', 'joca@gmail', '202cb962ac59075b964b07152d234b70'),
 (10, 'lubilau', 'lubilau@gmail', '0228af72b097d93b646874e5dd81f863'),
 (11, 'joao', 'joao@gmail.com', '202cb962ac59075b964b07152d234b70'),
-(12, 'Fulano', 'fulano@gmail.com', '3342949e2e99fc2f304de6fdd626a188');
+(12, 'Fulano', 'fulano@gmail.com', '3342949e2e99fc2f304de6fdd626a188'),
+(13, 'Luca', 'luca@gmail.com', '0940004e70ce8d82b440d3c1244dfdee'),
+(14, 'Professor', 'Professor@gmail.com', 'eecccd8ff4107946c78d42265cd474b5'),
+(15, 'Administrador', 'admindigital@gmail.com', '33d7afc0f793dc46311840d065ba439e');
 
 -- --------------------------------------------------------
 
@@ -346,7 +348,10 @@ INSERT INTO `user_info` (`id`, `id_users`, `name`, `email`, `cidade`, `estado`, 
 (4, 9, 'joca', 'joca@gmail', '', '', '', 0, 0, 0, 0),
 (5, 10, 'lubilau', 'lubilau@gmail', '', '', '', 0, 0, 0, 0),
 (6, 11, 'Lucas Santos Ferreira', 'joao@gmail.com', 'caragua', '', 'rua tal tal tal, 1885', 1885, 11668050, 0, 2147483647),
-(7, 12, 'Fulano', 'fulano@gmail.com', '7777777', '', '77777777', 7, 77787777, 777777777, 7777777);
+(7, 12, 'Fulano', 'fulano@gmail.com', '7777777', '', '77777777', 7, 77787777, 777777777, 7777777),
+(8, 13, 'Luca', 'luca@gmail.com', '', '', '', 0, 0, 0, 0),
+(9, 14, 'Professor', 'Professor@gmail.com', '', '', '', 0, 0, 0, 0),
+(10, 15, 'Administrador', 'admindigital@gmail.com', '', '', '', 0, 0, 0, 0);
 
 --
 -- Indexes for dumped tables
@@ -528,13 +533,13 @@ ALTER TABLE `rates`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- AUTO_INCREMENT for table `user_info`
 --
 ALTER TABLE `user_info`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
