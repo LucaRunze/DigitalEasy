@@ -12,9 +12,9 @@
        
 	</head>
 	<body>
-		<div class="container">
+		<div class="containerCa" id="contact" >
 
-			<form class="contact1-form validate-form" method="post">
+			<form  class="contact1-form validate-form" method="post">
 				<span class="contact1-form-title">
 					Alteração de Senha
 				</span>

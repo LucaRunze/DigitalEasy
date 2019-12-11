@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 10-Dez-2019 às 22:57
+-- Generation Time: 11-Dez-2019 às 18:37
 -- Versão do servidor: 10.1.37-MariaDB
 -- versão do PHP: 7.3.1
 
@@ -134,19 +134,19 @@ CREATE TABLE `products` (
 --
 
 INSERT INTO `products` (`id`, `id_category`, `id_brand`, `name`, `description`, `stock`, `price`, `price_from`, `rating`, `featured`, `sale`, `bestseller`, `new_product`, `options`) VALUES
-(1, 6, 1, 'Computador 1', 'Computador G-FIRE\r\nModelo HTG-244', 10, 1499, 1799, 0, 0, 1, 1, 0, NULL),
-(2, 6, 1, 'Computador 2', 'Computador G-FIRE Modelo HTAVA-R83', 10, 1835, 2000, 0, 0, 0, 0, 0, NULL),
-(3, 6, 1, 'Computador 3', 'Computador G-FIRE Modelo AMD A6 7400K', 10, 1299, 1499, 0, 0, 0, 0, 1, NULL),
-(4, 6, 2, 'Celular 1', 'Celular Moto One Vision', 10, 1917, 2100, 0, 0, 0, 0, 0, NULL),
-(5, 6, 2, 'Celular 2', 'Celular Moto G7 play', 10, 1059, 1299, 0, 0, 0, 0, 1, NULL),
-(6, 6, 3, 'Celular 3', 'Celular Huawei P30 lite', 10, 1337, 1499, 0, 0, 0, 0, 0, NULL),
-(7, 6, 3, 'Mouse 1', 'Mouse Warrior Modelo MO206', 10, 197, 210, 0, 0, 0, 0, 0, NULL),
-(8, 6, 5, 'Mouse 2', 'Mouse Dell Modelo Elite', 10, 450, 599, 0, 0, 0, 0, 0, NULL),
-(9, 6, 6, 'Mouse 3', 'Mouse Forktreck', 10, 53, 99, 0, 0, 0, 0, 0, NULL),
-(10, 7, 7, 'Cadeira 1', 'Cadeira Gamer', 10, 499, 699, 0, 0, 0, 0, 0, NULL),
-(11, 8, 8, 'HeadFone 1', 'Headfone Philips', 10, 299, 350, 0, 0, 0, 0, 0, NULL),
-(12, 12, 12, 'Notebook 1', 'Notebook Acer Modelo A315-51-347W', 10, 1899, 2199, 0, 0, 0, 0, 0, NULL),
-(13, 12, 12, 'Notebook 2', 'Notebook Lenovo Modelo Ideapad 330', 10, 2999, 3299, 0, 0, 0, 0, 0, NULL);
+(1, 6, 1, 'G-FIRE HTG-244', 'Computador G-FIRE\r\nModelo HTG-244', 10, 1499, 1799, 5, 0, 1, 1, 0, NULL),
+(2, 6, 1, 'G-FIRE MAX', 'Computador G-FIRE Modelo HTAVA-R83', 10, 1835, 2000, 4, 0, 1, 0, 0, NULL),
+(3, 6, 1, 'G-FIRE AMD 7400k', 'Computador G-FIRE Modelo AMD A6 7400K', 10, 1299, 1499, 4, 0, 1, 0, 1, NULL),
+(4, 6, 2, 'Motorolaa One Vision', 'Celular Moto One Vision', 10, 1917, 2100, 0, 0, 1, 0, 0, NULL),
+(5, 6, 2, 'Motorola G7 Play', 'Celular Moto G7 play', 10, 1059, 1299, 0, 0, 1, 0, 1, NULL),
+(6, 6, 3, 'Huawei P30 Lite', 'Celular Huawei P30 lite', 10, 1337, 1499, 0, 0, 1, 0, 0, NULL),
+(7, 6, 3, 'Warrior', 'Mouse Warrior Modelo MO206', 10, 197, 210, 0, 0, 1, 0, 0, NULL),
+(8, 6, 5, 'Mouse Elite', 'Mouse Dell Modelo Elite', 10, 450, 599, 5, 0, 1, 0, 0, NULL),
+(9, 6, 6, 'ForkTreck', 'Mouse Forktreck', 10, 53, 99, 0, 0, 1, 0, 0, NULL),
+(10, 7, 7, 'Cadeira Legends', 'Cadeira Gamer', 10, 499, 699, 0, 0, 1, 0, 0, NULL),
+(11, 8, 8, 'HeadFone Philips', 'Headfone Philips', 10, 299, 350, 4, 0, 1, 0, 0, NULL),
+(12, 12, 12, 'Acer ', 'Notebook Acer Modelo A315-51-347W', 10, 1899, 2199, 5, 0, 1, 0, 0, NULL),
+(13, 12, 12, 'Lenovo Modelo IdeaPad', 'Notebook Lenovo Modelo Ideapad 330', 10, 2999, 3299, 0, 0, 1, 0, 0, NULL);
 
 -- --------------------------------------------------------
 
@@ -315,7 +315,8 @@ INSERT INTO `users` (`id`, `name`, `email`, `password`) VALUES
 (12, 'Fulano', 'fulano@gmail.com', '3342949e2e99fc2f304de6fdd626a188'),
 (13, 'Luca', 'luca@gmail.com', '0940004e70ce8d82b440d3c1244dfdee'),
 (14, 'Professor', 'Professor@gmail.com', 'eecccd8ff4107946c78d42265cd474b5'),
-(15, 'Administrador', 'admindigital@gmail.com', '33d7afc0f793dc46311840d065ba439e');
+(15, 'Administrador', 'admindigital@gmail.com', '33d7afc0f793dc46311840d065ba439e'),
+(16, 'cliente', 'cliente@gmail.com', '4983a0ab83ed86e0e7213c8783940193');
 
 -- --------------------------------------------------------
 
@@ -351,7 +352,8 @@ INSERT INTO `user_info` (`id`, `id_users`, `name`, `email`, `cidade`, `estado`, 
 (7, 12, 'Fulano', 'fulano@gmail.com', '7777777', '', '77777777', 7, 77787777, 777777777, 7777777),
 (8, 13, 'Luca', 'luca@gmail.com', '', '', '', 0, 0, 0, 0),
 (9, 14, 'Professor', 'Professor@gmail.com', '', '', '', 0, 0, 0, 0),
-(10, 15, 'Administrador', 'admindigital@gmail.com', '', '', '', 0, 0, 0, 0);
+(10, 15, 'Administrador', 'admindigital@gmail.com', '', '', '', 0, 0, 0, 0),
+(11, 16, 'cliente', 'cliente@gmail.com', 'Caraguatatuba', '', 'R.Januario Paulino Ferreira', 10, 11668040, 2147483647, 2147483647);
 
 --
 -- Indexes for dumped tables
@@ -533,13 +535,13 @@ ALTER TABLE `rates`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
 -- AUTO_INCREMENT for table `user_info`
 --
 ALTER TABLE `user_info`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

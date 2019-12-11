@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="<?php echo BASE_URL; ?>assets/css/style.css" type="text/css" />
 
     <link href=<?php echo BASE_URL; ?>assets/css/footer.css type="text/css" rel="stylesheet">
-
+    
 </head>
 
 <body>
@@ -124,36 +124,33 @@
                             <div class="item active">
                                 <div class="col-sm-6">
                                     <h1><span>Digital</span>Easy</h1>
-                                    <h2>Computadores Gamers</h2>
-                                    <p>Oferta da semana - Computador gamer por R$1.399,99.</p>
-                                    <button type="button" class="btn btn-default get">Veja Já</button>
+                                    <h2>Graças a inauguração da nossa loja</h2>
+                                    <h2>Teremos o Mês de Dezembro todo em Black Friday!!!</h2>
                                 </div>
                                 <div class="col-sm-6">
-                                    <img src="assets/images/slide1.jpg" class="girl img-responsive" alt="" />
-                                    <img src="images/home/pricing.png" class="pricing" alt="" />
+                                    <img src="assets/images/black.png" class="girl img-responsive" alt="" />
+                                    <img src="assets/images/pricng.png" class="pricing" alt="" />
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="col-sm-6">
                                     <h1><span>Digital</span>Easy</h1>
-                                    <h2>Celulares</h2>
-                                    <button type="button" class="btn btn-default get">Veja Já</button>
+                                    <h2>Computadores</h2>
                                 </div>
                                 <div class="col-sm-6">
                                     <img src="assets/images/slide2.jpg" class="girl img-responsive" alt="" />
-                                    <img src="images/home/pricing.png" class="pricing" alt="" />
+                                    <img src="assets/images/pricing.png" class="pricing" alt="" />
                                 </div>
                             </div>
 
                             <div class="item">
                                 <div class="col-sm-6">
                                     <h1><span>Digital</span>Easy</h1>
-                                    <h2>Cadeiras Gamers</h2>
-                                    <button type="button" class="btn btn-default get">Veja Já</button>
+                                    <h2>Celulares em até 40% de desconto!!!</h2>
                                 </div>
                                 <div class="col-sm-6">
-                                    <img src="assets/images/slide3.jpg" class="girl img-responsive" alt="" />
-                                    <img src="images/home/pricing.png" class="pricing" alt="" />
+                                    <img src="assets/images/celular1.jpg" class="girl img-responsive" alt="" />
+                                    <img src="assets/images/pricing.png" class="pricing" alt="" />
                                 </div>
                             </div>
 

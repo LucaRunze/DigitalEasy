@@ -2,6 +2,7 @@
 class Core {
 
 	public function run() {
+		
         $url = '/'.(isset($_GET['q'])?$_GET['q']:'');
 
 		$params = array();
